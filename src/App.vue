@@ -1,9 +1,11 @@
 <template>
-  <nav>
-    <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link>
-  </nav>
-  <router-view/>
+  <div id="app">
+    <nav>
+      <router-link to="/">Formulario</router-link> |
+      <router-link to="/usuarios">Usuarios</router-link>
+    </nav>
+    <router-view />
+  </div>
 </template>
 
 <style>
@@ -12,7 +14,9 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
-  color: #2c3e50;
+  color: #f1f1f1;
+  background-color: #121212;
+  min-height: 100vh;
 }
 
 nav {
@@ -21,7 +25,9 @@ nav {
 
 nav a {
   font-weight: bold;
-  color: #2c3e50;
+  color: #f1f1f1;
+  text-decoration: none;
+  margin: 0 10px;
 }
 
 nav a.router-link-exact-active {
